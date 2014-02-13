@@ -1,0 +1,9 @@
+{
+  "name": "changingroom",
+  "title": "ChangingRoom",
+  "id": "jid1-Ok7YEXaRRYshyQ",
+  "description": "A Redweb Labs add-on for making online retailing frictionless. Will try to jump you to the best page for Male or Female clothes based on your preferences. http://labs.redweb.com",
+  "author": "Sean M. Tracey",
+  "license": "MPL 2.0",
+  "version": "0.4"
+}
