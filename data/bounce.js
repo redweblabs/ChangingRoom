@@ -4,6 +4,12 @@ var rawDivGrab = document.querySelectorAll("[href]"),
 	zz = rawDivGrab.length,
 	start = Date.now() * 1;
 
+self.port.on("sexchange", function(sex){
+
+	keyword = sex;
+
+});
+
 self.port.on("message", function(data) {
 
 	data = JSON.parse(data);
@@ -104,7 +110,7 @@ self.port.on("message", function(data) {
 						if(thisPotentialParent.getAttribute('class').indexOf('Nav') > -1|| thisPotentialParent.getAttribute('class').indexOf('nav') > -1){
 							parentAdded = true
 							refined.push(thisPotential);
-							break
+							break;
 						}
 					}
 
@@ -113,10 +119,10 @@ self.port.on("message", function(data) {
 						if(thisPotentialParent.getAttribute('title').indexOf('Nav') > -1|| thisPotentialParent.getAttribute('title').indexOf('nav') > -1){
 							parentAdded = true
 							refined.push(thisPotential);
-							break
+							break;
 						}
-					}
 
+					}
 
 				}
 
@@ -172,6 +178,8 @@ self.port.on("message", function(data) {
 			}
 		
 		});
+
+		// console.log(distanceLinks);
 
 		if(distanceLinks.length > 0){
 
