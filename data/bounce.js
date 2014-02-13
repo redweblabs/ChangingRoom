@@ -51,14 +51,14 @@ self.port.on("message", function(data) {
 
 						if(thisDiv.getAttribute('href') !== null){
 
-							if(thisDiv.getAttribute('href').toLowerCase().indexOf(keyword) != -1 && thisDiv.getAttribute('href').toLowerCase().indexOf(window.location.origin) > -1){
-							
+							if(thisDiv.getAttribute('href').toLowerCase().indexOf(keyword) != -1 && thisDiv.href.toLowerCase().indexOf(window.location.origin) != -1){
+
 								potentials.push({
 									node : thisDiv,
 									parents : parents
 								});
 
-							}	
+							}
 
 						}
 
