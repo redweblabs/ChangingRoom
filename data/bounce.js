@@ -34,7 +34,7 @@ self.port.on("message", function(data) {
 	if(instances.length > 1){
 		console.log("Person is browsing, Don't redirect");
 		return;
-	} else if(instances.length == 1){
+	} else if(instances.length == 1 && (window.location.origin + "/") === window.location.href){
 
 		var potentials = [];
 
